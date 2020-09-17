@@ -1,0 +1,43 @@
+option solver gurobi; 
+
+let M := 1;
+
+let lambda := 0;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.0001;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.0005;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.001;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.005;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.01;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.05;
+solve;
+display lambda, class_error, bin_sum;
+
+let lambda := 0.1;
+solve;
+display lambda, class_error, bin_sum;
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+option solver gurobi;
+
+let lambda := 0;
+solve;
+display lambda;
+display b, class_error, abs;
+
+let lambda := 0.1;
+solve;
+display lambda;
+display class_error, abs; 
+
+
+let lambda := 1;
+solve;
+display lambda;
+display class_error, abs; 
+
+let lambda := 5;
+solve;
+display lambda;
+display class_error, abs;
+
+let lambda := 10;
+solve;
+display lambda;
+display class_error, abs;
+
+let lambda := 25;
+solve;
+display lambda;
+display class_error, abs;
+
+let lambda := 50;
+solve;
+display lambda;
+display class_error, abs;
+
+let lambda := 75;
+solve;
+display lambda;
+display class_error, abs;
+

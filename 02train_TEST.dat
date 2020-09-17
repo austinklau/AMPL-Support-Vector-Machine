@@ -1,0 +1,7 @@
+param A := 5923;
+# param B := 5958; # 11881
+
+param IMAGES := 11881;
+param PIXELS := 784;
+
+param D : include "784.txt" := include "02train.txt";

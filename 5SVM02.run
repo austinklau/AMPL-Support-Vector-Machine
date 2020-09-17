@@ -1,0 +1,26 @@
+option solver gurobi; 
+option gurobi_options 'IntFeasTol = 1e-7';
+
+let M := 100;
+
+
+let lambda := 0;
+	solve;
+	display lambda, class_error, bin_sum;
+	display bin, x;
+	display b;
+
+for {k in 0..5} {
+	let lambda := 1e-4 * 10^k;
+	solve;
+	display lambda, class_error, bin_sum;
+	display bin, x;
+	display b;
+}
+
+
+
+
+
+
+

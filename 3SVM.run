@@ -1,0 +1,51 @@
+option solver gurobi;
+
+let lambda := 0;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 0.1;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 1;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 10;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 25;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 50;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 100;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 250;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 500;
+solve;
+display lambda;
+display class_error, sum_squares;
+
+let lambda := 1000;
+solve;
+display lambda;
+display class_error, sum_squares;

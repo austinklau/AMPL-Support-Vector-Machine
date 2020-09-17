@@ -1,0 +1,5 @@
+param A := 267;
+param IMAGES := 515;
+param PIXELS := 50;
+
+param D : include "50.txt" := include "17train_REDUCED.txt";

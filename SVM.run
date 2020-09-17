@@ -1,0 +1,5 @@
+option solver gurobi; 
+solve;
+display x, y, b;
+display avgError;
+# for {j in 1..PIXELS} display x[j] > "17weights.txt";
